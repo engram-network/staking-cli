@@ -93,11 +93,11 @@ docker run -it --rm -v $(pwd)/validator_keys:/app/validator_keys engramnet/staki
 You can also run the tool with optional arguments:
 
 ```sh
-docker run -it --rm -v $(pwd)/validator_keys:/app/validator_keys engramnet/staking-deposit-cli new-mnemonic --num_validators=<NUM_VALIDATORS> --mnemonic_language=english --folder=<YOUR_FOLDER_PATH>
+docker run -it --rm -v $(pwd)/validator_keys:/app/validator_keys engramnet/staking-deposit-cli:dencun new-mnemonic --num_validators=<NUM_VALIDATORS> --mnemonic_language=english --folder=<YOUR_FOLDER_PATH>
 ```
 
 Example for 1 validator on the [Tokio testnet](https://launchpad.engram.tech/) using english:
 
 ```sh
-docker run -it --rm -v $(pwd)/validator_keys:/app/validator_keys engramnet/staking-deposit-cli new-mnemonic --num_validators=1 --mnemonic_language=english --chain=testnet
+docker run -it --rm -v $(pwd)/validator_keys:/app/validator_keys engramnet/staking-deposit-cli:dencun new-mnemonic --num_validators=1 --mnemonic_language=english --chain=testnet
 ```
